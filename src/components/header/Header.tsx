@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 
 import { Container, Row, Col } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
+import { SiFramer } from "react-icons/si";
 //import "../../styles/header.scss";
 import "./header.scss"
 
@@ -77,6 +78,7 @@ const Header = () => {
                         </Link>
                         <Link to="/home" className=" d-flex align-items-center gap-2 App-log" style={{ border: '0px solid red', justifyContent: 'center', alignItems: 'center', padding: 0, margin: 0, textDecoration: 'none', color: '#fff' }}>
                             {/* <img src={require('../../assets/all-images/header-logotype-autline-min.png')} /> */}
+                            <SiFramer style={{ color: 'rgba(3,153,255,1)' }} />
                             <div style={{ border: '0px solid red' }}><span>Framer</span></div>
                             <div style={{ display: 'flex', flexDirection: 'column', border: '0px solid green', padding: 0, marginBottom: 10, alignItems: 'center', justifyContent: 'center' }}>
                                 <i className="ri-arrow-drop-up-line" style={{ width: "10px", height: "10px", padding: 0, margin: 0 }} ></i>
