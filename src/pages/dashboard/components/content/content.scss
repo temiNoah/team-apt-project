@@ -1,0 +1,76 @@
+.left-section {
+    flex: 1;
+    cursor: pointer
+}
+
+.right-section {
+    flex: 1;
+    cursor: pointer;
+}
+
+.progressbar1 {
+    background-color: #f0f0f0;
+}
+
+.progressbar1 .progress-bar {
+    background-color: rgba(185, 171, 247, 1);
+}
+
+.progressbar2 {
+    background-color: #f0f0f0;
+}
+
+.progressbar2 .progress-bar {
+    background-color: rgba(147, 229, 250, 1);
+}
+
+.progressbar3 {
+    background-color: #f0f0f0;
+}
+
+.progressbar3 .progress-bar {
+    background-color: rgba(246, 184, 212, 1);
+}
+
+.custom-tab {
+    border-top: none !important;
+    /* Remove top border */
+    border-left: none !important;
+    /* Remove left border */
+    border-right: none !important;
+    /* Remove right border */
+    border-color: none !important;
+
+    border-bottom: none !important;
+}
+
+.nav-link {
+    border-top: none !important;
+    /* Remove top border */
+    border-left: none !important;
+    /* Remove left border */
+    border-right: none !important;
+    /* Remove right border */
+    border-color: none !important;
+
+    border-bottom-width: none !important;
+
+    color: rgba(0, 0, 0, 0.3) !important;
+
+}
+
+.money-icon-container {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.custom-tab .active-money-icon {
+    background-color: #000 !important;
+}
+
+.custom-tab .nav-link.active {
+    border-bottom-color: rgba(0, 0, 0, 0.4) !important;
+    /* Color of the bottom border for active tab */
+    border-bottom-width: 2px !important;
+    /* Width of the bottom border for active tab */
+    color: rgba(0, 0, 0, 1) !important;
+}
