@@ -112,7 +112,7 @@ function Dashboard() {
                                                         className="acct-amount"
                                                         initial={{ opacity: 1 }}
                                                         animate={{ opacity: isAccVisible ? 0 : 1 }}
-                                                        transition={{ duration: 0.8 }}
+                                                        transition={{ duration: 0.5 }}
                                                     >
                                                         <div className=''>{"$33,842"}</div>
                                                     </motion.div>
@@ -124,7 +124,7 @@ function Dashboard() {
                                                         className="view-acct-details"
                                                         initial={{ opacity: 0 }}
                                                         animate={{ opacity: isAccVisible ? 1 : 0 }}
-                                                        transition={{ duration: 0.8 }}
+                                                        transition={{ duration: 0.5, delay: 0 }}
                                                     >
 
                                                         <div><span className='view-acct-details-box'>View Account Details</span></div>
