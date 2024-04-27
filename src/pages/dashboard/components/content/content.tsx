@@ -3,6 +3,8 @@ import {
     Col, Container, Row, Progress, Nav,
     NavItem, NavLink, TabContent, TabPane
 } from 'reactstrap'
+import { TbBrandStripe } from "react-icons/tb";
+import { SiZendesk } from "react-icons/si";
 import classnames from 'classnames';
 
 import './content.scss'
@@ -14,7 +16,7 @@ function Content() {
             type: "Business",
             amount: "$1,233.00",
             date: "Wed,16 Feb, 18:11",
-            logo: ''
+            logo: <TbBrandStripe style={{ color: "white" }} />
         },
         {
             name: "Dropbox",
@@ -28,7 +30,7 @@ function Content() {
             type: "Marketing",
             amount: "$1200.00",
             date: "Tue, 16 Feb, 20:00",
-            logo: ''
+            logo: <SiZendesk style={{ color: "white" }} />
         },
         {
             name: "Spotify",
@@ -134,7 +136,7 @@ function Content() {
                                     border: '0px 0px 1px  0px',
                                     width: '300px'
                                 }}>
-                                <div style={{ width: '30px', height: '30px', borderRadius: '50%', textAlign: 'center' }}
+                                <div style={{ width: '30px', height: '30px', borderRadius: '50%', textAlign: 'center', paddingTop: '4px' }}
                                     className={`money-icon-container ${activeTab === '1' ? 'active-money-icon' : ''}`}>
                                     <i className="ri-download-2-fill" style={{ color: '#fff' }}> </i>
                                 </div>
@@ -154,7 +156,7 @@ function Content() {
                                     border: '0px 0px 1px  0px',
                                     width: '300px'
                                 }} >
-                                <div style={{ width: '30px', height: '30px', borderRadius: '50%', textAlign: 'center' }}
+                                <div style={{ width: '30px', height: '30px', borderRadius: '50%', textAlign: 'center', paddingTop: '4px' }}
                                     className={`money-icon-container ${activeTab === '2' ? 'active-money-icon' : ''}`}>
                                     <i className="ri-upload-2-fill" style={{ color: '#fff' }}></i>
                                 </div>
