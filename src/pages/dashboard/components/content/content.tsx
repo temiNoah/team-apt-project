@@ -86,7 +86,7 @@ function Content() {
 
                 {
                     data.map(eachTrxn => (
-                        <div style={{ margin: '30px' }}>
+                        <div style={{ paddingTop: '20px' }} className='left-section-recent-trxns'>
                             <Row>
                                 <Col style={{ display: 'flex', flexDirection: 'row', gap: 10 }}>
                                     <div style={{ width: '30px', height: '30px', backgroundColor: '#000', textAlign: 'center', paddingTop: '3px' }}>{eachTrxn.logo}</div>
@@ -194,7 +194,7 @@ function Content() {
                             }
                         </TabPane>
                         <TabPane tabId="2">
-                            hbjbk
+
                         </TabPane>
                     </TabContent>
 

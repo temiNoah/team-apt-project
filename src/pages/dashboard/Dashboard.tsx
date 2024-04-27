@@ -73,9 +73,15 @@ function Dashboard() {
                                 className="account_category_card"
                                 onMouseEnter={() => setIsAccVisible(true)}
                                 onMouseLeave={() => setIsAccVisible(false)}
+                                animate={{ width: isChartVisible ? '650px' : '300px' }}
+                                transition={{ duration: 2, delay: 1 }}
                             >
 
-                                <Card className="p-3 mb-5 bg-light rounded" style={{ height: '250px', display: 'flex', flex: 1 }}>
+                                <Card className="p-3 mb-5 bg-light rounded" style={{
+                                    height: '250px', display: 'flex', flex: 1,
+                                    //borderBottomWidth: `${isChartVisible ? '2px' : '1px'}`,
+                                    //borderBottomColor: `${isChartVisible ? 'rgba(0,0,255,0.8)' : 'rgba(0,0,0,0.2)'}`
+                                }}>
                                     <div style={{ display: 'flex', flexDirection: 'row', flex: 1, width: '100%' }}>
                                         <div style={{ flex: 1 }}>
                                             <CardHeader className='custom-card-header' >
@@ -134,7 +140,7 @@ function Dashboard() {
                                                 className="chartContainer"
                                                 initial={{ scale: 0.5, opacity: 0 }}
                                                 animate={{ scale: 1, opacity: 1 }}
-                                                transition={{ duration: 0.5 }}
+                                                transition={{ duration: 0.5, delay: 2 }}
                                             >
 
                                                 <Chart
